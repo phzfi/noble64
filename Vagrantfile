@@ -12,8 +12,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "ubuntu/jammy64"
 
-  config.vm.provision :shell, path: "scripts/apt-disable.sh"
+  config.vm.provision :shell, :path => "scripts/apt-disable.sh"
   config.vm.provision :shell, :path => "scripts/update-guest-additions.sh"
+  config.vm.provision :shell, :path => "scripts/release-upgrade.sh"
 
 #  config.vm.provision "ansible" do |ansible|
 #      ansible.playbook = "playbooks/apt.yml"

@@ -1,10 +1,12 @@
-# Vagrant Basebox Nobl64
+# Vagrant Basebox Ubuntu Noble64
 
 ## 1. Project Description
 
 Vagrant Basebox on Ubuntu 24.04 LTS 64-bit Noble. Based on ubuntu/jammy64 with do-release-upgrade to noble.
 
 ### 1.1. Business Vision
+
+Canonical has stopped from releasing new Vagrant boxes. Update the vagrant box to the latest LTS by using do-release-upgrade.
 
 ### 1.2. Task Management
 
