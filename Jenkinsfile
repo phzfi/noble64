@@ -77,6 +77,7 @@ pipeline {
         timeout(time: 300, unit: 'MINUTES') {
           sh script: "vagrant up", returnStatus: true
           sh script: "vagrant up --provision", returnStatus: true
+          sh script: "vagrant up --provision", returnStatus: true
         }
       }
     }
